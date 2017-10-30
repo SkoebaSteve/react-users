@@ -46,6 +46,7 @@
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.1",
     "postcss-loader": "^2.0.8",
+    "pre-commit": "^1.2.2",
     "react-test-renderer": "^16.0.0",
     "style-loader": "^0.19.0",
     "stylelint": "^8.2.0",
@@ -64,5 +65,8 @@
       "<rootDir>/test/",
       "<rootDir>/node_modules/"
     ]
-  }
+  },
+  "pre-commit": [
+    "test"
+  ]
 }
