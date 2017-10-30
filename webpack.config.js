@@ -52,6 +52,7 @@ var config = {
     ],
   },
   resolve : {
+    modules: [APP_DIR, "node_modules"],
     extensions: [".jsx", ".json", ".js"]
   },
   externals:  [
