@@ -2,13 +2,11 @@
 import React from 'react'
 import style from './style'
 
-const App = () => {
-  return (
-    <div className="app">
-      start
-      <style jsx>{style}</style>
-    </div>
-  )
-}
+const App = () => (
+  <div className="app">
+    start
+    <style jsx>{style}</style>
+  </div>
+)
 
 export default App
