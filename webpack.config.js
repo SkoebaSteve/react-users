@@ -38,7 +38,7 @@ var config = {
             }
           },
           { loader: 'postcss-loader'}
-        ]
+        ],
       },
       {
         test: /\.(svg)$/,

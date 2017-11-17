@@ -1,10 +1,5 @@
-/* eslint no-unused-vars: 0 */
-import React from 'react'
-import style from './style'
-import UserList from '../components/userList'
-
-export default class App extends React.Component {
-  users = [
+{
+  "users" : [
     {
       "id": "1",
       "name": "John Snow",
@@ -24,12 +19,4 @@ export default class App extends React.Component {
       "avatar": "http://i.pravatar.cc/150?img=47"
     }
   ]
-  render() {
-    return (
-      <div className="app">
-        <UserList users={this.users} />
-        <style jsx>{style}</style>
-      </div>
-    )
-  }
 }
