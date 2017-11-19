@@ -16,14 +16,15 @@
   "author": "Steef Janssen",
   "license": "ISC",
   "dependencies": {
+    "es6-promise": "^4.1.1",
     "json-server": "^0.12.1",
-    "normalize.css": "^7.0.0",
-    "postcss-normalize": "^4.0.0",
+    "promise-polyfill": "^6.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "styled-jsx": "^2.1.2",
+    "webfontloader": "^1.6.28",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {

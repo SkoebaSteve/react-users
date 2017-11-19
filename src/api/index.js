@@ -1,4 +1,9 @@
 import 'whatwg-fetch'
+import Promise from 'promise-polyfill'
+// To add to window
+if (!window.Promise) {
+  window.Promise = Promise
+}
 
 const GetUsers = () => {
   fetch('http://localhost:3000/users')

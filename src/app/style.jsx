@@ -4,7 +4,8 @@ import css from 'styled-jsx/css'
 import { colors } from '../../config/variables'
 
 export default css`
-  .app {
-    color: ${colors.black}
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: ${colors.lightGray};
   }
 `

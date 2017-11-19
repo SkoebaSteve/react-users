@@ -1,0 +1,31 @@
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.userListItem {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 16px;
+  list-style-type: none;
+}
+
+@media (min-width: 400px) {
+  .userListItem {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 800px) {
+  .userListItem {
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 1100px) {
+  .userListItem {
+    width: calc(100% / 5);
+  }
+}
