@@ -5,14 +5,21 @@ import { colors } from '../../../config/variables'
 
 export default css`
   .header {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     background-color: ${colors.white};
     text-align: center;
   }
 
+  .headerNav {
+    align-self: flex-start;
+  }
+
   .headerTitle {
-    font-size: 20px;
+    align-self: center;
     margin: 0;
     color: ${colors.gray};
+    font-size: 20px;
   }
 `

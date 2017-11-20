@@ -1,6 +1,7 @@
 /* eslint no-unused-vars: 0 */
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 import WebFont from 'webfontloader'
 import App from './app'
 import normalize from './normalize.css'
@@ -12,7 +13,9 @@ WebFont.load({
 })
 
 ReactDOM.render(
-  <App />
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
   ,
   document.getElementById('app'),
 )

@@ -3,6 +3,7 @@
 // https://github.com/yannickcr/eslint-plugin-react/issues/1389
 /* eslint-disable react/no-typos */
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { string, bool } from 'prop-types'
 import { BackIcon } from '../icons'
 import style from './style'
@@ -11,7 +12,9 @@ const Header = ({ title, icon }) => (
   <header className="header">
     { icon &&
       <nav className="headerNav">
-        <BackIcon />
+        <Link to="/">
+          <BackIcon />
+        </Link>
       </nav>
     }
     <h1 className="headerTitle">{title}</h1>
