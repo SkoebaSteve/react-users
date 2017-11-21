@@ -7,14 +7,14 @@
 import React from 'react'
 import { string, object } from 'prop-types'
 import UserPage from '../components/userPage'
-import API from '../api'
+import { GetUser } from '../api/user'
 
 class UserPageContainer extends React.Component {
   state = {
     user: false,
   }
   componentDidMount() {
-    API.get(`users/${this.props.match.url}`).then(result => result.json()).then((user) => {
+    GetUser(this.props.match.url).then((user) => {
       this.setState({ user })
     })
   }

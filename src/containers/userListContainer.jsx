@@ -4,12 +4,12 @@
 /* eslint-disable react/no-typos */
 import React from 'react'
 import UserList from '../components/userList'
-import API from '../api'
+import { GetUsers } from '../api/user'
 
 class UserListContainer extends React.Component {
   state = { users: [] }
   componentDidMount() {
-    API.get('users').then(result => result.json()).then((users) => {
+    GetUsers().then((users) => {
       this.setState({ users })
     })
   }

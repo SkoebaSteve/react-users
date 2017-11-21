@@ -14,16 +14,16 @@ const API = {
    * However, there is a simple `ok` flag that indicates
    * whether an HTTP response's status code is in the successful range.
    */
-  handleError(_res) {
-    return _res.ok ? _res : Promise.reject(_res.statusText)
+  handleError(res) {
+    return res.ok ? res : Promise.reject(res.statusText)
   },
 
   /**
    * Get abstraction.
    * @return {Promise}
    */
-  get(_endpoint) {
-    return fetch(this.url + _endpoint)
+  get(endpoint) {
+    return fetch(this.url + endpoint)
       .then(this.handleError)
       .catch((error) => { throw new Error(error) })
   },

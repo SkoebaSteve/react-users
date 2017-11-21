@@ -1,5 +1,4 @@
-/* eslint no-undef: 0 */
-/* eslint no-unused-vars: 0 */
+/* eslint-env jest */
 /* eslint no-unused-expressions: 0 */
 import chai, { expect } from 'chai'
 import { shallow } from 'enzyme'
