@@ -7,6 +7,7 @@ import React from 'react'
 import { string, bool } from 'prop-types'
 import style from './style'
 
+// if the image 404, use the default one
 const AddDefaultSrc = (ev, src = 'assets/profile.svg') => {
   ev.target.src = src
 }
@@ -17,6 +18,7 @@ const User = ({
   avatar,
   large,
 }) => (
+  // Switch style for when its displayed in a list or in a page
   <figure className={large ? 'user large' : 'user'}>
     <img className="userImage" onError={AddDefaultSrc} src={avatar} alt="" />
     <figcaption className="userCaption">{caption}</figcaption>

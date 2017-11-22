@@ -14,6 +14,7 @@ class UserPageContainer extends React.Component {
     user: false,
   }
   componentDidMount() {
+    // display user based on the url passed on by react router
     GetUser(this.props.match.url).then((user) => {
       this.setState({ user })
     })
